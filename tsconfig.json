@@ -2,6 +2,9 @@
     "compilerOptions": {
 		"target": "es5",
 		"module": "amd",
+		// Module resolution allows package.json dependencies to be picked up by typescript from within webpack
+		// https://www.typescriptlang.org/docs/handbook/module-resolution.html
+		"moduleResolution": "node",
         "preserveConstEnums": true,
         "sourceMap": true,
 		"forceConsistentCasingInFileNames": true,
